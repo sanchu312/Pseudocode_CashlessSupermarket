@@ -1,0 +1,9 @@
+SUM OF VALUES IN DICTIONARY
+
+def myfunc(dict)
+	sum=0
+	for i in dict.values():
+		sum=sum+i
+	return sum
+dict={'m':1,'n':2,'o':3,'p':4,'q':5,'r':6,'s':7,'t':8,'u':9,'v':10}
+print("Sum of values in the dictionary",myfunc(dict))
