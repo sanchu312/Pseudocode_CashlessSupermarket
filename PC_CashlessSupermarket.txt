@@ -1,0 +1,30 @@
+CASHLESS SUPERMARKET
+ABSTRACT:
+The Functionality of a Cashless Supermarket is to keep track of
+purchased products and also online transactions for billing.
+PSEUDOCODE:
+Step 1:START
+Step 2:INITIALIZE the system through User Id_Card
+Step 3:SEARCH for qr-code in item
+Step 4:SCAN qr-code
+Step 5:DISPLAY data on screen
+Step 6:ADD item cost as item are added
+Step 7:INITIALIZE Set=1
+REPEAT while set=1
+	if scan_list==bill_list then
+		Don’t do anything
+	Exit
+	Else if scan_list>bill_list then
+		FIND new_id
+		FETCH data
+		DISPLAY data on screen
+		ADD bill
+		UPDATE bill
+	Else if scan_list<bill_list then
+		FIND new_Id
+		DISPLAY data on screen
+		DELETE bill
+		UPDATE bill
+Step 8:After shopping Press upload key
+Step 9:PRINT bill
+Step 10:STOP
