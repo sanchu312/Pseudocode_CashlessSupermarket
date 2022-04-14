@@ -1,0 +1,15 @@
+CALCULATOR
+
+x=input("Enter 1st no:")
+y=input(Enter 2nd no:")
+ch=input(Enter your choice(+,-,*,/):")
+a=int(x)
+b=int(y)
+if ch=="+":
+	print(a+b)
+if ch=="-":
+	print(a-b)
+if ch=="*"
+	print(a*b)
+if ch=="/"
+	print(a/b)
