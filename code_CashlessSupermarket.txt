@@ -1,0 +1,54 @@
+CASHLESS SUPERMARKET
+PROGRAM:
+print("CASHLESS SUPERMARKET")
+d= {}
+n = int(input("Enter no of items you want to buy: "))
+	d = dict(input().split() for x in range(n))
+for keys in d:
+	d[keys]=int(d[keys])
+print(d)
+
+#TOTAL
+def my_func(d):
+	sum = 0
+	for i in d.values():
+		sum = sum + i
+	return sum
+print("CART TOTAL:", my_func(d))
+
+#ADDING OR REMOVING ITEMS
+choice_a= input("Do you want to add any item (yes or no) : ")
+if choice_a == "yes" :
+	added_items= {}
+	no=int(input("enter no of items you want to add: "))
+	added_items = dict(input().split() for x in range(no))
+	d.update(added_items)
+	for keys in d:
+		d[keys]=int(d[keys])
+	print(d)
+else:
+	print("No items added")
+#print(d)
+choice_r= input("Do you want to remove any item (yes or no) : ")
+if choice_r == "yes" :
+	key_to_delete = input("Enter the key to delete : ")
+	if key_to_delete in d :
+		del d[key_to_delete]
+	else :
+		print("No items removed")
+	print( " " )
+	print("Final list of the items in your cart: ")
+	print(d)
+	print("CART TOTAL:", my_func(d))
+	cart_total=my_func(d)
+
+#PAYMENT
+card_amount=float(input("enter amount in your account : "))
+if(card_amount>=cart_total):
+	print("Transaction successful!!!")
+elif(card_amount<cart_total):
+	credit_opt = input("Do you want to use credit option (yes or no) : ")
+	if credit_opt == "yes" :
+		print("Transaction successful!!!")
+	else :
+		print("Transactional failed!!!")
